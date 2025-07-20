@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.1 (Python 3.9.6 on darwin)" generated="2025-07-20T14:54:28.929545" rpa="false" schemaversion="5">
+<suite id="s1" name="Context Menu Test" source="/Users/logpoint/Desktop/webapp_automation/tests/context_menu_test.robot">
+<test id="s1-t1" name="Right Click Triggers JS Alert (Fixed JS)" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-20T14:54:29.389472" level="INFO">Opening browser 'Chrome' to base url 'https://the-internet.herokuapp.com/context_menu'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-07-20T14:54:29.388915" elapsed="6.969420"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-07-20T14:54:36.360912" elapsed="0.374933"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-20T14:54:37.738193" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-20T14:54:36.736228" elapsed="1.002301"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-07-20T14:54:37.740145" level="INFO">Executing JavaScript:
+var element = document.getElementById("hot-spot"); var evt = new MouseEvent('contextmenu', {bubbles: true, cancelable: true, view: window}); element.dispatchEvent(evt);
+Without any arguments.</msg>
+<arg>var element = document.getElementById("hot-spot"); var evt = new MouseEvent('contextmenu', {bubbles: true, cancelable: true, view: window}); element.dispatchEvent(evt);</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-07-20T14:54:37.739293" elapsed="0.045894"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-20T14:54:38.788239" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-20T14:54:37.786133" elapsed="1.002477"/>
+</kw>
+<kw name="Alert Should Be Present" owner="SeleniumLibrary">
+<msg time="2025-07-20T14:54:38.789777" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<doc>Verifies that an alert is present and by default, accepts it.</doc>
+<status status="PASS" start="2025-07-20T14:54:38.789399" elapsed="0.008266"/>
+</kw>
+<kw name="Handle Alert" owner="SeleniumLibrary">
+<msg time="2025-07-20T14:54:38.798901" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<msg time="2025-07-20T14:54:44.232165" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-07-20T14:54:44.234704" level="FAIL">Alert not found in 5 seconds.</msg>
+<arg>ACCEPT</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="FAIL" start="2025-07-20T14:54:38.798530" elapsed="5.451379">Alert not found in 5 seconds.</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2025-07-20T14:54:44.250944" elapsed="0.000173"/>
+</kw>
+<status status="FAIL" start="2025-07-20T14:54:29.386110" elapsed="14.865431">Alert not found in 5 seconds.</status>
+</test>
+<status status="FAIL" start="2025-07-20T14:54:28.931641" elapsed="15.320920"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Context Menu Test" id="s1" pass="0" fail="1" skip="0">Context Menu Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
