@@ -19,5 +19,9 @@ This repository contains end-to-end automated tests using **Robot Framework + Se
 
 ## 🚀 How to Run
 
+Make sure Robot Framework and its dependencies are installed:
+
 ```bash
+pip install -r requirements.txt
+
 robot tests/
